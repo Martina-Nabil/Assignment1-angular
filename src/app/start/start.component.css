@@ -1,0 +1,87 @@
+.start {
+  background-color: #1abc9c;
+  padding-block: 80px;
+  margin-top: 80px;
+}
+
+h2 {
+  padding-top: 20px;
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+p {
+  padding-top: 10px;
+  color: #fff;
+}
+
+.icon {
+  position: relative;
+  color: #fff;
+}
+
+.icon::before {
+  content: "";
+  background-color: #fff;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  left: 42%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon::after {
+  content: "";
+  background-color: #fff;
+  width: 80px;
+  height: 5px;
+  position: absolute;
+  right: 42%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1389.98px) {
+  .icon::before {
+    left: 40%;
+  }
+
+  .icon::after {
+    right: 40%;
+  }
+}
+
+@media (max-width: 994.98px) {
+  .icon::before {
+    left: 36%;
+  }
+
+  .icon::after {
+    right: 36%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .icon::before {
+    left: 32%;
+  }
+
+  .icon::after {
+    right: 32%;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .icon::before {
+    left: 30%;
+  }
+
+  .icon::after {
+    right: 30%;
+  }
+}

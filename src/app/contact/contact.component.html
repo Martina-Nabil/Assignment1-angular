@@ -1,0 +1,51 @@
+<div class="contact">
+  <div class="container">
+    <h2 class="text-center mt-4 pt-5">CONATCT SECTION</h2>
+    <div class="icon pb-2 mb-5 text-center">
+      <i class="fa-solid fa-star"></i>
+    </div>
+    <div class="w-75 mx-auto my-5">
+      <div class="my-5">
+        <label for="username" [class.top]="!userName.length">userName:</label>
+        <input
+          type="text"
+          [(ngModel)]="userName"
+          placeholder="userName"
+          id="username"
+        />
+      </div>
+      <div class="my-5">
+        <label for="userage" [class.top]="!userAge.length">userAge:</label>
+        <input
+          type="text"
+          [(ngModel)]="userAge"
+          placeholder="userAge"
+          id="userage"
+        />
+      </div>
+      <div class="my-5">
+        <label for="useremail" [class.top]="!userEmail.length"
+          >userEmail:</label
+        >
+        <input
+          type="email"
+          [(ngModel)]="userEmail"
+          placeholder="userEmail"
+          id="useremail"
+        />
+      </div>
+      <div class="my-5">
+        <label for="userpassword" [class.top]="!userPassword.length"
+          >userPassword:</label
+        >
+        <input
+          type="text"
+          [(ngModel)]="userPassword"
+          placeholder="userPassword"
+          id="userpassword"
+        />
+      </div>
+      <button class="btn mb-3">send Message</button>
+    </div>
+  </div>
+</div>

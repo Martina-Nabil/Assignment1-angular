@@ -1,0 +1,25 @@
+<div class="portfolio pb-3">
+  <div class="container">
+    <h2 class="text-center pt-5">PORTFOLIO COMPONENT</h2>
+    <div class="icon pb-2 text-center"><i class="fa-solid fa-star"></i></div>
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let img of imgArray">
+        <div class="portfolio-img">
+          <img [src]="img" class="w-100" alt="" />
+          <div class="layer" (click)="flag = false; selectedImage = img">
+            <span><i class="fa-solid fa-plus"></i></span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="portfolio-layer"
+        [class.d-none]="flag"
+        (click)="closeLayer($event.target, img)"
+      >
+        <div class="layer-img">
+          <img #img [src]="selectedImage" class="w-100" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
